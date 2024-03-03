@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Defias Tavern</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../fuente/estilos/salida.css">
+</head>
+<body class="m-0 p-0 bg-fondo-web box-border font-parrafo">
+<header class="flex place-content-between items-center h-20 bg-color-menus">
+    <section class = "flex items-center h-20  ml-2.5">
+        <img class="h-20 ml-2.5" id="logo_imagen" src="../fuente/Multimedia/Imagenes/logo2.png" alt="Defias Tavern Logo">
+        <h2 class="hidden font-titulo r2:block r4:hidden r6:block">Defias Tavern</h2>
+    </section>
+    <nav class="px-1 py-0 r2:px-0 r2:py-0">
+        <section class = "items-center hidden r1:flex mr-2.5 pr-1.5 ">
+            <article><a href="#" class = "pr-3 hover:text-color-action">Home</a></article>
+            <article><a href="#" class = "pr-3 hover:text-color-action">Builds</a></article>
+            <article><a href="#" class = "pr-3 hover:text-color-action">Foro</a></article>
+            <article><a href="#" class = "pr-3 hover:text-color-action">Login</a></article>
+        </section>
+    </nav>
+    <button class="flex cursor-pointer bg-none border-none hover:text-color-action r1:hidden">
+        <i class="fa fa-bars"></i>
+    </button>
+    <section class="hidden r3:flex items-center bg-color-main rounded-md py-2 px-4 focus-within:border-2 focus-within:border-solid focus-within:border-color-action">
+        <input type="text" class="bg-transparent outline-none border-none">
+        <i class="fa fa-search"></i>
+    </section>
+
+</header>
+<main id="home" class="ml-auto max-w-9/10">
+    <section class="base-body grid grid-cols-2 r3:grid-cols-1 max-w-9/10 mt-4 mb-8 leading-3 shadow-custom min-h-500
+bg-cover bg-no-repeat bg-color-main r3:bg-fondo-asesinato-pc-40 r5:bg-fondo-asesinato-pc-60 r6:bg-fondo-asesinato-pc-80 r7:bg-fondo-asesinato-pc-100s justify-between" id="asesinato">
+        <article class="header-movil row-start-1 block r2:block r3:hidden w-full h-125 r2:h-150 bg-fondo-asesinato-movil-500 r2:bg-fondo-asesinato-movil">
+
+        </article>
+        <article class="pos1 order-last col-start-1 col-end-2 row-start-1 row-end-2 r3:row-start-2 bg-color-main text-opacity-80">
+            <h1 class="text-shadow-custom-1 hover:text-color-action hover:text-shadow-custom-2 transition-color-shadow duration-300 ease ">Pícaro Asesinato</h1>
+            <p class="mt-4">Una de las herramientas preferidas del asesino es la pareja de dagas cubiertas de venenos letales.
+                El daño que infligen al principio resulta engañoso: las heridas iniciales suelen parecer poco importantes,
+                casi superficiales. </p>
+        </article>
+    </section>
+
+    <section class="base-body grid grid-cols-1 r3:grid-cols2 max-w-9/10 mt-4 mb-8 leading-3 shadow-custom min-h-500
+    bg-cover bg-no-repeat bg-color-main r3:bg-fondo-forajido-pc-40 r5:bg-fondo-forajido-pc-60 r6:bg-fondo-forajido-pc-80 r7:bg-fondo-forajido-pc-100" id="forajido">
+        <article class="header-movil row-start-1 block r3:hidden w-full h-125 r2:h-150 bg-fondo-forajido-movil-500 r2:bg-fondo-forajido-movil">
+        </article>
+        <article class="pos2 col-start-2 col-end-3 row-start-1 row-end-2 r3:col-start-1 r3:col-end-2 r3:row-start-2 bg-color-main opacity-80">
+            <h1 class="text-shadow-custom-1 hover:text-color-action hover:text-shadow-custom-2 transition-color-shadow duration-300 ease ">Picaro Forajido</h1>
+            <p class="mt-4">Los pícaros Forajido son los bribones con menos escrúpulos de Azeroth. Operan al margen
+                de la ley y manipulan las reglas y distorsionan la verdad para salirse con la suya.
+                Aunque tienen mucho en común con los demás pícaros, los forajidos no destacan por su
+                tacto o discreción. .</p>
+        </article>
+    </section>
+
+    <section class="base-body grid grid-cols-1 r3:grid-cols2 max-w-9/10 mt-4 mb-8 leading-3 shadow-custom min-h-500
+    bg-cover bg-no-repeat bg-color-main r3:bg-fondo-sutileza-pc-40 r5:bg-fondo-sutileza-pc-60 r6:bg-fondo-sutileza-pc-80 r7:bg-fondo-sutileza-pc-100" id="sutileza">
+        <article class="header-movil row-start-1 block r3:hidden w-full h-125 r2:h-150 bg-fondo-sutileza-movil-500 r2:bg-fondo-sutileza-movil">
+        </article>
+        <article class="pos1 col-start-1 col-end-2 row-start-1 row-end-2 r3:row-start-2 bg-color-main opacity-80">
+            <h1 class="text-shadow-custom-1 hover:text-color-action hover:text-shadow-custom-2 transition-color-shadow duration-300 ease ">Picaro Sutileza</h1>
+            <p class="mt-4">Los pícaros Sutileza son los maestros de las sombras y atacan sin que se les llegue a ver.
+                No tienen las dagas envenenadas de los asesinos o la capacidad de combate de los forajidos,
+                pero su astucia en el campo de batalla y capacidad para esconderse incluso cuando están a
+                plena vista no tienen rival. </p>
+        </article>
+    </section>
+</main>
+
+
+<footer class="bg-color-menus rounded-lg shadow dark:bg-gray-900 ">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="text-black hover:text-color-action me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" class="text-black hover:text-color-action me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="text-black hover:text-color-action me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="text-black hover:text-color-action">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
+</body>
+</html>
