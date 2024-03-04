@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Defias Tavern</title>
+    <script src="../fuente/scripts/despliegaMenu.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../fuente/estilos/salida.css">
 </head>
@@ -20,22 +21,31 @@
             <article><a href="#" class = "pr-3 hover:text-color-action">Login</a></article>
         </section>
     </nav>
-    <button class="flex cursor-pointer bg-none border-none hover:text-color-action r1:hidden">
+    <button class="flex cursor-pointer bg-none border-none hover:text-color-action r1:hidden" id="menu-movil">
         <i class="fa fa-bars"></i>
     </button>
     <section class="hidden r3:flex items-center bg-color-main rounded-md py-2 px-4 focus-within:border-2 focus-within:border-solid focus-within:border-color-action">
         <input type="text" class="bg-transparent outline-none border-none ">
         <i class="fa fa-search"></i>
     </section>
+    <div id="desplegable_movil" class="hidden bg-color-menus w-250 h-full fixed top-0 left-0 overflow-auto p-8 box-border z-20">
+        <button id="cierra_desplegable" class="bg-transparent border-none p-5 cursor-pointer text-black hover:text-color-action">
+            <i class="fa fa-times"></i>
+        </button>
+        <div><a href="../fuente/index.html" class = "block text-black mb-5 hover:text-color-action">Home</a></div>
+        <div><a href="#"  class = "block text-black mb-5 hover:text-color-action">Builds</a></div>
+        <div><a href="#"  class = "block text-black mb-5 hover:text-color-action">Foro</a></div>
+        <div><a href="#"  class = "block text-black mb-5 hover:text-color-action">Login</a></div>
+    </div>
 
 </header>
 <main id="home" class="ml-auto max-w-9/10">
-    <section class="base-body  grid r3:grid-cols-2 mt-4 mb-8 leading-3 shadow-custom r3:min-h-500 max-w-90 ml-auto mr-auto
+    <section class="grid r3:grid-cols-2 mt-4 mb-8 leading-3 shadow-custom r3:min-h-500 max-w-90 ml-auto mr-auto
 bg-cover bg-no-repeat bg-color-main r3:bg-fondo-asesinato-pc-40 r5:bg-fondo-asesinato-pc-60 r6:bg-fondo-asesinato-pc-80 r7:bg-fondo-asesinato-pc-100s justify-between" id="asesinato">
         <article class="header-movil bg-cover bg-no-repeat block r2:block r3:hidden w-full h-125 r2:h-150 bg-fondo-asesinato-movil-500 r2:bg-fondo-asesinato-movil">
 
         </article>
-        <article class="pos1 order-last bg-color-main text-opacity-80">
+        <article class="order-last bg-color-main text-opacity-80">
             <h1 class="mt-8 mb-8 text-shadow-custom-1 hover:text-color-action hover:text-shadow-custom-2 transition-color-shadow duration-300 ease ">Pícaro Asesinato</h1>
             <p class="mt-4 ml-8 mr-8 leading-relaxed tracking-wide text-justify text-lg ">Una de las herramientas preferidas del asesino es la pareja de dagas cubiertas de venenos letales.
                 El daño que infligen al principio resulta engañoso: las heridas iniciales suelen parecer poco importantes,
@@ -43,11 +53,11 @@ bg-cover bg-no-repeat bg-color-main r3:bg-fondo-asesinato-pc-40 r5:bg-fondo-ases
         </article>
     </section>
 
-    <section class="base-body grid r3:grid-cols-2  mt-4 mb-8 leading-3 shadow-custom r3:min-h-500 max-w-90 ml-auto mr-auto
+    <section class="grid r3:grid-cols-2  mt-4 mb-8 leading-3 shadow-custom r3:min-h-500 max-w-90 ml-auto mr-auto
     bg-cover bg-no-repeat bg-color-main r3:bg-fondo-forajido-pc-40 r5:bg-fondo-forajido-pc-60 r6:bg-fondo-forajido-pc-80 r7:bg-fondo-forajido-pc-100" id="forajido">
         <article class="header-movil block bg-cover bg-no-repeat r3:hidden w-full h-125 r2:h-150 bg-fondo-forajido-movil-500 r2:bg-fondo-forajido-movil">
         </article>
-        <article class="pos2 bg-color-main opacity-80  r3:col-start-2">
+        <article class="bg-color-main opacity-80  r3:col-start-2">
             <h1 class="mt-8 mb-8 text-shadow-custom-1 hover:text-color-action hover:text-shadow-custom-2 transition-color-shadow duration-300 ease ">Picaro Forajido</h1>
             <p class="mt-4 ml-8 mr-8 leading-relaxed tracking-wide text-justify text-lg " >Los pícaros Forajido son los bribones con menos escrúpulos de Azeroth. Operan al margen
                 de la ley y manipulan las reglas y distorsionan la verdad para salirse con la suya.
@@ -56,11 +66,11 @@ bg-cover bg-no-repeat bg-color-main r3:bg-fondo-asesinato-pc-40 r5:bg-fondo-ases
         </article>
     </section>
 
-    <section class="base-body grid r3:grid-cols-2  mt-4 mb-8 leading-3 shadow-custom r3:min-h-500 max-w-90 ml-auto mr-auto
+    <section class="grid r3:grid-cols-2  mt-4 mb-8 leading-3 shadow-custom r3:min-h-500 max-w-90 ml-auto mr-auto
     bg-cover bg-no-repeat bg-color-main r3:bg-fondo-sutileza-pc-40 r5:bg-fondo-sutileza-pc-60 r6:bg-fondo-sutileza-pc-80 r7:bg-fondo-sutileza-pc-100" id="sutileza">
         <article class="header-movil bg-cover bg-no-repeat block r3:hidden w-full h-125 r2:h-150 bg-fondo-sutileza-movil-500 r2:bg-fondo-sutileza-movil">
         </article>
-        <article class="pos1  bg-color-main opacity-">
+        <article class="bg-color-main opacity-">
             <h1 class="mt-8 mb-8 text-shadow-custom-1 hover:text-color-action hover:text-shadow-custom-2 transition-color-shadow duration-300 ease ">Picaro Sutileza</h1>
             <p class="mt-4 ml-8 mr-8 leading-relaxed tracking-wide text-justify text-lg ">Los pícaros Sutileza son los maestros de las sombras y atacan sin que se les llegue a ver.
                 No tienen las dagas envenenadas de los asesinos o la capacidad de combate de los forajidos,

@@ -1189,6 +1189,10 @@ input:checked + .toggle-bg{
   margin-bottom: 1rem;
 }
 
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -1301,8 +1305,16 @@ input:checked + .toggle-bg{
   height: 2.25rem;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .w-1\/2{
   width: 50%;
+}
+
+.w-250{
+  width: 250px;
 }
 
 .w-4{
@@ -1445,6 +1457,10 @@ input:checked + .toggle-bg{
 
 .self-center{
   align-self: center;
+}
+
+.overflow-auto{
+  overflow: auto;
 }
 
 .overflow-hidden{
@@ -1613,6 +1629,14 @@ input:checked + .toggle-bg{
 
 .p-4{
   padding: 1rem;
+}
+
+.p-8{
+  padding: 2rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-1{

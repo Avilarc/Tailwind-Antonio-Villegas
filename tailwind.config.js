@@ -70,6 +70,9 @@ module.exports = {
         },
         maxWidth: {
             '90' : '90%',
+        },
+        width: {
+            '250' : '250px',
         }
     },
   },
