@@ -67,6 +67,9 @@ module.exports = {
         },
         transitionTimingFunction: {
             'ease': 'ease',
+        },
+        maxWidth: {
+            '90' : '90%',
         }
     },
   },
